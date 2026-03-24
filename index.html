@@ -154,202 +154,843 @@
       </div>
     </section>
 
+    <!-- ===== 카테고리 탭 + 아이콘 그리드 ===== -->
+    <section class="category-section">
+      <div class="container">
+
+        <!-- 탭 버튼 -->
+        <div class="category-tabs">
+          <button class="cat-tab active" data-tab="feed">사료</button>
+          <button class="cat-tab" data-tab="snack">간식</button>
+          <button class="cat-tab" data-tab="goods">용품</button>
+        </div>
+
+        <!-- 사료 탭 그리드 -->
+        <div class="icon-grid" id="tab-feed">
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/01-kitten.png" alt="키튼"></div>
+            <span class="icon-name">키튼</span>
+            <span class="icon-count">32개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/02-adult.png" alt="어덜트"></div>
+            <span class="icon-name">어덜트</span>
+            <span class="icon-count">58개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/03-senior.png" alt="시니어"></div>
+            <span class="icon-name">시니어</span>
+            <span class="icon-count">24개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/04-all.png" alt="전연령"></div>
+            <span class="icon-name">전연령</span>
+            <span class="icon-count">41개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/05-dryfeed.png" alt="건식사료"></div>
+            <span class="icon-name">건식사료</span>
+            <span class="icon-count">67개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/06-canfeed.png" alt="주식캔"></div>
+            <span class="icon-name">주식캔</span>
+            <span class="icon-count">53개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/07-pouchfeed.png" alt="파우치"></div>
+            <span class="icon-name">파우치</span>
+            <span class="icon-count">39개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/08-airfeed.png" alt="동결건조"></div>
+            <span class="icon-name">동결건조</span>
+            <span class="icon-count">18개</span>
+          </a>
+        </div>
+
+        <!-- 간식 탭 그리드 -->
+        <div class="icon-grid hidden" id="tab-snack">
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/09-fouchsnack.png" alt="파우치간식"></div>
+            <span class="icon-name">파우치간식</span>
+            <span class="icon-count">45개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/10-cansnack.png" alt="캔간식"></div>
+            <span class="icon-name">캔간식</span>
+            <span class="icon-count">31개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/11-jerky.png" alt="육포"></div>
+            <span class="icon-name">육포</span>
+            <span class="icon-count">27개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/12-treet.png" alt="트릿"></div>
+            <span class="icon-name">트릿</span>
+            <span class="icon-count">36개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/13-sausage.png" alt="소시지"></div>
+            <span class="icon-name">소시지</span>
+            <span class="icon-count">19개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/14-grass.png" alt="캣그라스"></div>
+            <span class="icon-name">캣그라스</span>
+            <span class="icon-count">12개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/15-raw.png" alt="생식"></div>
+            <span class="icon-name">생식</span>
+            <span class="icon-count">22개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/16-dental.png" alt="덴탈간식"></div>
+            <span class="icon-name">덴탈간식</span>
+            <span class="icon-count">14개</span>
+          </a>
+        </div>
+
+        <!-- 용품 탭 그리드 -->
+        <div class="icon-grid hidden" id="tab-goods">
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/17-toy.png" alt="장난감"></div>
+            <span class="icon-name">장난감</span>
+            <span class="icon-count">48개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/18-house.png" alt="하우스"></div>
+            <span class="icon-name">하우스</span>
+            <span class="icon-count">23개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/19-sand.png" alt="모래/화장실"></div>
+            <span class="icon-name">모래/화장실</span>
+            <span class="icon-count">35개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/20-bath.png" alt="목욕/미용"></div>
+            <span class="icon-name">목욕/미용</span>
+            <span class="icon-count">29개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/21-tower.png" alt="캣타워"></div>
+            <span class="icon-name">캣타워</span>
+            <span class="icon-count">17개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/22-waterer.png" alt="급수기"></div>
+            <span class="icon-name">급수기</span>
+            <span class="icon-count">21개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/23-clothes.png" alt="의류"></div>
+            <span class="icon-name">의류</span>
+            <span class="icon-count">16개</span>
+          </a>
+          <a href="#" class="icon-card">
+            <div class="icon-wrap"><img src="img/24-bag.png" alt="이동가방"></div>
+            <span class="icon-name">이동가방</span>
+            <span class="icon-count">26개</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
     <!-- ===== 핫딜 섹션 ===== -->
     <section class="hot-deal">
       <div class="container">
+        <!-- 섹션 헤더 -->
         <div class="section-header">
-          <div class="wf-box section-title">핫딜</div>
-          <div class="wf-box section-more">더보기</div>
+          <h2 class="section-title">핫딜</h2>
+          <a href="#" class="section-more">더보기 →</a>
         </div>
 
-        <!-- 카테고리 탭 -->
-        <div class="tab-list">
-          <div class="wf-box active">전체</div>
-          <div class="wf-box">사료</div>
-          <div class="wf-box">간식</div>
-          <div class="wf-box">용품</div>
-          <div class="wf-box">장난감</div>
+        <!-- 상품 그리드 4열 2행 -->
+        <div class="product-grid" id="hot-deal-grid">
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/deal-01.jpg" alt="핫딜 상품 1">
+              <span class="badge">오늘마감</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">네추럴코어 에코 유기농 그레인프리 오리고기 고양이 사료</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">30%</span>
+                <span class="original-price">45,000원</span>
+              </div>
+              <span class="sale-price">31,500원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(1,243)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/deal-02.jpg" alt="핫딜 상품 2">
+              <span class="badge">특가</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">로얄캐닌 인도어 어덜트 실내 고양이 전용 건식 사료</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">20%</span>
+                <span class="original-price">62,000원</span>
+              </div>
+              <span class="sale-price">49,600원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(876)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/deal-03.jpg" alt="핫딜 상품 3">
+              <span class="badge badge-point">인기</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">하림 더리얼 닭가슴살 고양이 간식 파우치 혼합 세트</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">15%</span>
+                <span class="original-price">28,000원</span>
+              </div>
+              <span class="sale-price">23,800원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(2,105)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/deal-04.jpg" alt="핫딜 상품 4">
+              <span class="badge">오늘마감</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">퍼시픽베이 오션 와일드 연어 고양이 주식캔 24개입</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">25%</span>
+                <span class="original-price">36,000원</span>
+              </div>
+              <span class="sale-price">27,000원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(534)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/deal-05.jpeg" alt="핫딜 상품 5">
+              <span class="badge">특가</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">캣잇 센스 2.0 멀티 피더 고양이 자동 급식기</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">18%</span>
+                <span class="original-price">55,000원</span>
+              </div>
+              <span class="sale-price">45,100원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(389)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/deal-06.jpeg" alt="핫딜 상품 6">
+              <span class="badge badge-point">인기</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">스크래쳐 고양이 박스 침대 숨숨집 대형 골판지</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">40%</span>
+                <span class="original-price">22,000원</span>
+              </div>
+              <span class="sale-price">13,200원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(1,678)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/deal-07.jpeg" alt="핫딜 상품 7">
+              <span class="badge">오늘마감</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">고양이 장난감 낚싯대 깃털 자동 회전 전동 터저</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">35%</span>
+                <span class="original-price">18,000원</span>
+              </div>
+              <span class="sale-price">11,700원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(921)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/deal-08.jpeg" alt="핫딜 상품 8">
+              <span class="badge">특가</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">네이처스 베스트 클루핏 고양이 두부 모래 6L 3개 세트</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">22%</span>
+                <span class="original-price">32,000원</span>
+              </div>
+              <span class="sale-price">24,960원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(743)</span>
+              </div>
+            </div>
+          </a>
+
         </div>
 
-        <!-- 상품 그리드 4x2 -->
-        <div class="product-grid">
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
+        <!-- 더보기 버튼 -->
+        <div class="product-more-wrap">
+          <button class="product-more-btn" data-target="hot-deal-grid">
+            상품 더보기
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
         </div>
+
       </div>
     </section>
 
     <!-- ===== 신상품 섹션 ===== -->
     <section class="new-products">
       <div class="container">
+        <!-- 섹션 헤더 -->
         <div class="section-header">
-          <div class="wf-box section-title">신상품</div>
-          <div class="wf-box section-more">더보기</div>
+          <h2 class="section-title">신상품</h2>
+          <a href="#" class="section-more">더보기 →</a>
         </div>
 
-        <!-- 상품 행 5개 -->
-        <div class="product-row">
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="product-card">
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
+        <!-- 상품 그리드 4열 -->
+        <div class="product-grid" id="new-products-grid">
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/new-01.png" alt="신상품 1">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">오리젠 캣 오리지널 고양이 그레인프리 건식 사료</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">10%</span>
+                <span class="original-price">78,000원</span>
+              </div>
+              <span class="sale-price">70,200원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(42)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/new-02.png" alt="신상품 2">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">카이코 참치 & 새우 고양이 파우치 간식 20개입 세트</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">5%</span>
+                <span class="original-price">24,000원</span>
+              </div>
+              <span class="sale-price">22,800원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(18)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/new-03.jpg" alt="신상품 3">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">펫라인 스마트 자동 정수기 고양이 음수량 체크 기능</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">8%</span>
+                <span class="original-price">42,000원</span>
+              </div>
+              <span class="sale-price">38,640원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(27)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/new-04.png" alt="신상품 4">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">냥이랑 국산 동결건조 닭가슴살 고양이 간식 50g</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">0%</span>
+                <span class="original-price"></span>
+              </div>
+              <span class="sale-price">16,500원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(9)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/new-05.jpeg" alt="신상품 5">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">소프트 벨벳 고양이 침대 원형 쿠션 대형 세탁 가능</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">12%</span>
+                <span class="original-price">35,000원</span>
+              </div>
+              <span class="sale-price">30,800원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(33)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/new-06.jpeg" alt="신상품 6">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">어반펫 스크래쳐 타워 중형 천연 사이잘 기둥 포함</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">7%</span>
+                <span class="original-price">89,000원</span>
+              </div>
+              <span class="sale-price">82,770원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(15)</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card product-hidden">
+            <div class="product-img-wrap">
+              <img src="img/new-07.jpeg" alt="신상품 7">
+              <span class="badge badge-point">NEW</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">퍼펙트펫 고양이 하네스 리드줄 세트 탈출 방지 조끼형</p>
+              <div class="product-price-wrap">
+                <span class="discount-rate">0%</span>
+                <span class="original-price"></span>
+              </div>
+              <span class="sale-price">21,900원</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(6)</span>
+              </div>
+            </div>
+          </a>
+
         </div>
+
+        <!-- 더보기 버튼 -->
+        <div class="product-more-wrap">
+          <button class="product-more-btn" data-target="new-products-grid">
+            상품 더보기
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+        </div>
+
       </div>
     </section>
 
-    <!-- ===== 랭킹 섹션 ===== -->
+    <!-- ===== 나캣랭킹 섹션 ===== -->
     <section class="ranking">
       <div class="container">
+
+        <!-- 섹션 헤더 -->
         <div class="section-header">
-          <div class="wf-box section-title">랭킹</div>
-          <div class="wf-box section-more">더보기</div>
+          <h2 class="section-title">나캣랭킹</h2>
+          <span class="ranking-date">2026.03.24 기준</span>
         </div>
 
-        <!-- 랭킹 상품 5개 -->
-        <div class="product-row">
-          <div class="ranking-card">
-            <div class="wf-box rank-num">1</div>
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="ranking-card">
-            <div class="wf-box rank-num">2</div>
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="ranking-card">
-            <div class="wf-box rank-num">3</div>
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="ranking-card">
-            <div class="wf-box rank-num">4</div>
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-          <div class="ranking-card">
-            <div class="wf-box rank-num">5</div>
-            <div class="wf-box product-img">상품이미지</div>
-            <div class="wf-box product-name"></div>
-            <div class="wf-box product-price"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- 어코디언 리스트 -->
+        <ul class="ranking-list" id="rankingList">
 
-    <!-- ===== 이벤트 섹션 ===== -->
-    <section class="event">
-      <div class="container">
-        <div class="section-header">
-          <div class="wf-box section-title">이벤트</div>
-          <div class="wf-box section-more">더보기</div>
-        </div>
+          <li class="ranking-item active">
+            <button class="ranking-header">
+              <span class="rank-num rank-top">1</span>
+              <img class="rank-thumb" src="img/rank-01.jpeg" alt="1위 상품">
+              <span class="rank-name">네추럴코어 에코 유기농 그레인프리 오리고기 고양이 사료 1.2kg</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-01.jpeg" alt="1위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">네추럴코어 에코 유기농 그레인프리 오리고기 고양이 사료 1.2kg</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">30%</span>
+                    <span class="original-price">45,000원</span>
+                  </div>
+                  <span class="sale-price">31,500원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(1,243)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <!-- 이벤트 카드 2열 -->
-        <div class="event-grid">
-          <div class="wf-box event-card">이벤트 배너 1</div>
-          <div class="wf-box event-card">이벤트 배너 2</div>
-          <div class="wf-box event-card">이벤트 배너 3</div>
-          <div class="wf-box event-card">이벤트 배너 4</div>
-        </div>
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num rank-top">2</span>
+              <img class="rank-thumb" src="img/rank-02.png" alt="2위 상품">
+              <span class="rank-name">로얄캐닌 인도어 어덜트 실내 고양이 전용 건식 사료 4kg</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-02.png" alt="2위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">로얄캐닌 인도어 어덜트 실내 고양이 전용 건식 사료 4kg</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">20%</span>
+                    <span class="original-price">62,000원</span>
+                  </div>
+                  <span class="sale-price">49,600원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="review-count">(876)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num rank-top">3</span>
+              <img class="rank-thumb" src="img/rank-03.png" alt="3위 상품">
+              <span class="rank-name">하림 더리얼 닭가슴살 고양이 간식 파우치 혼합 세트 20개입</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-03.png" alt="3위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">하림 더리얼 닭가슴살 고양이 간식 파우치 혼합 세트 20개입</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">15%</span>
+                    <span class="original-price">28,000원</span>
+                  </div>
+                  <span class="sale-price">23,800원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(2,105)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">4</span>
+              <img class="rank-thumb" src="img/rank-04.jpeg" alt="4위 상품">
+              <span class="rank-name">퍼시픽베이 오션 와일드 연어 고양이 주식캔 24개입</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-04.jpeg" alt="4위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">퍼시픽베이 오션 와일드 연어 고양이 주식캔 24개입</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">25%</span>
+                    <span class="original-price">36,000원</span>
+                  </div>
+                  <span class="sale-price">27,000원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="review-count">(534)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">5</span>
+              <img class="rank-thumb" src="img/rank-05.jpeg" alt="5위 상품">
+              <span class="rank-name">캣잇 센스 2.0 멀티 피더 고양이 자동 급식기</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-05.jpeg" alt="5위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">캣잇 센스 2.0 멀티 피더 고양이 자동 급식기</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">18%</span>
+                    <span class="original-price">55,000원</span>
+                  </div>
+                  <span class="sale-price">45,100원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(389)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">6</span>
+              <img class="rank-thumb" src="img/rank-06.jpeg" alt="6위 상품">
+              <span class="rank-name">스크래쳐 고양이 박스 침대 숨숨집 대형 골판지</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-06.jpeg" alt="6위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">스크래쳐 고양이 박스 침대 숨숨집 대형 골판지</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">40%</span>
+                    <span class="original-price">22,000원</span>
+                  </div>
+                  <span class="sale-price">13,200원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="review-count">(1,678)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">7</span>
+              <img class="rank-thumb" src="img/rank-07.jpeg" alt="7위 상품">
+              <span class="rank-name">고양이 장난감 낚싯대 깃털 자동 회전 전동 터저</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-07.jpeg" alt="7위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">고양이 장난감 낚싯대 깃털 자동 회전 전동 터저</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">35%</span>
+                    <span class="original-price">18,000원</span>
+                  </div>
+                  <span class="sale-price">11,700원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(921)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">8</span>
+              <img class="rank-thumb" src="img/rank-08.jpeg" alt="8위 상품">
+              <span class="rank-name">네이처스 베스트 클루핏 고양이 두부 모래 6L 3개 세트</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-08.jpeg" alt="8위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">네이처스 베스트 클루핏 고양이 두부 모래 6L 3개 세트</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">22%</span>
+                    <span class="original-price">32,000원</span>
+                  </div>
+                  <span class="sale-price">24,960원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="review-count">(743)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">9</span>
+              <img class="rank-thumb" src="img/rank-09.jpeg" alt="9위 상품">
+              <span class="rank-name">오리젠 캣 오리지널 고양이 그레인프리 건식 사료 340g</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-09.jpeg" alt="9위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">오리젠 캣 오리지널 고양이 그레인프리 건식 사료 340g</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">10%</span>
+                    <span class="original-price">78,000원</span>
+                  </div>
+                  <span class="sale-price">70,200원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(412)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ranking-item">
+            <button class="ranking-header">
+              <span class="rank-num">10</span>
+              <img class="rank-thumb" src="img/rank-10.jpeg" alt="10위 상품">
+              <span class="rank-name">소프트 벨벳 고양이 침대 원형 쿠션 대형 세탁 가능</span>
+              <svg class="rank-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="ranking-body">
+              <div class="rank-detail">
+                <img src="img/rank-10.jpeg" alt="10위 상품">
+                <div class="rank-detail-info">
+                  <p class="product-name">소프트 벨벳 고양이 침대 원형 쿠션 대형 세탁 가능</p>
+                  <div class="product-price-wrap">
+                    <span class="discount-rate">12%</span>
+                    <span class="original-price">35,000원</span>
+                  </div>
+                  <span class="sale-price">30,800원</span>
+                  <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">(33)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
       </div>
     </section>
 
     <!-- ===== 집사 커뮤니티 섹션 ===== -->
     <section class="community">
       <div class="container">
+
+        <!-- 섹션 헤더 -->
         <div class="section-header">
-          <div class="wf-box section-title">집사 커뮤니티</div>
-          <div class="wf-box section-more">더보기</div>
+          <h2 class="section-title">집사 커뮤니티</h2>
+          <a href="board.html" class="section-more">더보기 →</a>
         </div>
 
-        <!-- 커뮤니티 카드 3열 -->
+        <!-- 2열 2행 카드 그리드 -->
         <div class="community-grid">
-          <div class="community-card">
-            <div class="wf-box community-img">게시글 이미지</div>
-            <div class="wf-box community-title"></div>
-            <div class="wf-box community-meta"></div>
-          </div>
-          <div class="community-card">
-            <div class="wf-box community-img">게시글 이미지</div>
-            <div class="wf-box community-title"></div>
-            <div class="wf-box community-meta"></div>
-          </div>
-          <div class="community-card">
-            <div class="wf-box community-img">게시글 이미지</div>
-            <div class="wf-box community-title"></div>
-            <div class="wf-box community-meta"></div>
-          </div>
-        </div>
 
-        <div class="community-more">
-          <div class="wf-box">커뮤니티 더보기</div>
+          <a href="board.html" class="community-card">
+            <div class="community-img-wrap">
+              <img src="img/comm-01.jpeg" alt="커뮤니티 게시글 1">
+            </div>
+            <div class="community-info">
+              <p class="community-title">우리 고양이가 처음으로 무릎에 올라왔어요 😭 너무 감동적인 순간이었습니다</p>
+              <div class="community-meta">
+                <span class="community-author">냥이집사</span>
+                <span class="community-date">2026.03.22</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="board.html" class="community-card">
+            <div class="community-img-wrap">
+              <img src="img/comm-02.jpeg" alt="커뮤니티 게시글 2">
+            </div>
+            <div class="community-info">
+              <p class="community-title">사료 바꿨더니 밥을 안 먹어요… 어떻게 하면 좋을까요?</p>
+              <div class="community-meta">
+                <span class="community-author">고양이대장</span>
+                <span class="community-date">2026.03.21</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="board.html" class="community-card">
+            <div class="community-img-wrap">
+              <img src="img/comm-03.jpeg" alt="커뮤니티 게시글 3">
+            </div>
+            <div class="community-info">
+              <p class="community-title">캣타워 추천해주세요! 2마리 합사 중인데 넓은 게 필요할 것 같아요</p>
+              <div class="community-meta">
+                <span class="community-author">치치맘</span>
+                <span class="community-date">2026.03.20</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="board.html" class="community-card">
+            <div class="community-img-wrap">
+              <img src="img/comm-04.jpeg" alt="커뮤니티 게시글 4">
+            </div>
+            <div class="community-info">
+              <p class="community-title">로얄캐닌 vs 힐스 어떤 게 더 좋나요? 7살 노령묘 기준으로 알려주세요</p>
+              <div class="community-meta">
+                <span class="community-author">묘한집사</span>
+                <span class="community-date">2026.03.19</span>
+              </div>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
+
+    <!-- ===== 플로팅 채팅 버튼 ===== -->
+    <a href="board.html" class="float-chat-btn" aria-label="집사 커뮤니티 바로가기">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </a>
 
   </main>
 
@@ -383,6 +1024,9 @@
   </footer>
 
   <script src="js/slider.js"></script>
+  <script src="js/category-tab.js"></script>
+  <script src="js/product-more.js"></script>
+  <script src="js/ranking.js"></script>
   <script>
     // 햄버거 메뉴 토글
     const hamburger = document.getElementById('hamburger');
