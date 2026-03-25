@@ -1,0 +1,130 @@
+/* ===== 로그인 페이지 전용 스타일 ===== */
+
+/* 헤더 (로고만) */
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 메인 */
+.login-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 40px - 70px);
+  padding: 40px 20px;
+  background: #f8f8f8;
+}
+
+/* 로그인 박스 */
+.login-box {
+  width: 100%;
+  max-width: 440px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+}
+
+/* 탭 */
+.login-tabs {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 28px;
+}
+
+.login-tab {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  font-family: var(--font);
+  font-weight: 600;
+  color: #aaa;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.login-tab.active {
+  color: var(--color-main);
+  border-bottom-color: var(--color-main);
+}
+
+/* 메시지 */
+.login-msg {
+  font-size: 14px;
+  margin-bottom: 12px;
+  min-height: 20px;
+  text-align: center;
+}
+
+.login-msg.error   { color: #e53935; }
+.login-msg.success { color: #43a047; }
+
+/* 폼 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-form.hidden {
+  display: none;
+}
+
+/* 입력 그룹 */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--color-text);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus {
+  border-color: var(--color-main);
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+/* 제출 버튼 */
+.btn-submit {
+  margin-top: 8px;
+  padding: 14px;
+  background: var(--color-main);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-submit:hover {
+  background: #e56200;
+}

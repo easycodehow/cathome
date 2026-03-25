@@ -1,0 +1,249 @@
+/* ===== 게시판 전용 스타일 ===== */
+
+/* GNB 현재 페이지 강조 */
+.gnb-active {
+  color: var(--color-main) !important;
+  font-weight: 700;
+}
+
+/* ===== 메인 레이아웃 ===== */
+.board-main {
+  min-height: 60vh;
+  padding: 60px 0 80px;
+  background: #fff;
+}
+
+.board-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+/* ===== 페이지 타이틀 ===== */
+.board-title-wrap {
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-text);
+  margin-bottom: 40px;
+}
+
+.board-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* ===== 검색바 ===== */
+.board-search-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.board-search {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.board-search-input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: var(--font);
+  border: none;
+  outline: none;
+  color: var(--color-text);
+}
+
+.board-search-input::placeholder {
+  color: #bbb;
+}
+
+.board-search-btn {
+  padding: 12px 24px;
+  background: var(--color-text);
+  color: #fff;
+  font-size: 15px;
+  font-family: var(--font);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition);
+  white-space: nowrap;
+}
+
+.board-search-btn:hover {
+  background: var(--color-main);
+}
+
+/* ===== 액션바 (전체 글 수 + 글쓰기 버튼) ===== */
+.board-action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.board-total {
+  font-size: 16px;
+  color: #888;
+}
+
+.board-total strong {
+  color: var(--color-main);
+  font-weight: 700;
+}
+
+.btn-write {
+  display: inline-block;
+  padding: 9px 20px;
+  background: var(--color-main);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.btn-write:hover {
+  background: #e56200;
+}
+
+/* ===== 게시글 테이블 ===== */
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+
+.board-table thead tr {
+  border-top: 2px solid var(--color-text);
+  border-bottom: 1px solid #ddd;
+}
+
+.board-table th {
+  padding: 14px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+  background: #fafafa;
+}
+
+.board-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background var(--transition);
+}
+
+.board-table tbody tr:hover {
+  background: #fff8f4;
+}
+
+.board-table td {
+  padding: 14px 12px;
+  font-size: 16px;
+  color: var(--color-text);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 컬럼별 너비 */
+.col-num   { width: 60px; color: #999; }
+.board-table td.col-title { text-align: left; }
+.col-author { width: 100px; }
+.col-date  { width: 110px; color: #888; }
+.col-views { width: 80px; color: #888; }
+.col-likes { width: 80px; color: var(--color-main); }
+
+/* 제목 링크 */
+.col-title a {
+  color: var(--color-text);
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 600px;
+  transition: color var(--transition);
+}
+
+.col-title a:hover {
+  color: var(--color-main);
+}
+
+/* ===== 페이지네이션 ===== */
+.board-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.page-btn {
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: var(--font);
+  color: #555;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.page-btn:hover:not(:disabled) {
+  border-color: var(--color-main);
+  color: var(--color-main);
+}
+
+.page-btn:disabled {
+  color: #ccc;
+  cursor: default;
+  border-color: #eee;
+}
+
+.page-info {
+  font-size: 16px;
+  color: #888;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+  .col-author,
+  .col-views,
+  .col-likes {
+    display: none;
+  }
+
+  .col-num { width: 48px; }
+  .col-date { width: 90px; }
+}
+
+@media (max-width: 480px) {
+  .board-main {
+    padding: 40px 0 60px;
+  }
+
+  .board-title {
+    font-size: 22px;
+  }
+
+  .board-search {
+    max-width: 100%;
+  }
+
+  .col-date {
+    display: none;
+  }
+
+  .board-table th,
+  .board-table td {
+    padding: 12px 8px;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 - CatHome</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+
+  <!-- ===== 상단 띠배너 ===== -->
+  <div class="top-banner">
+    <a href="#">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+      </svg>
+      이번 주 행사 이벤트 모아보기 →
+    </a>
+  </div>
+
+  <!-- ===== 헤더 ===== -->
+  <header id="header">
+    <div class="header-top">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <span class="logo-cat">CAT</span><span class="logo-home">HOME</span>
+        </a>
+        <div class="header-search">
+          <input type="text" class="search-input" placeholder="상품을 검색해보세요">
+          <button class="search-btn" aria-label="검색">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+        </div>
+        <div class="header-icons">
+          <button class="icon-btn" aria-label="알림">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="장바구니">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="프로필">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="header-gnb">
+      <div class="header-inner">
+        <ul class="gnb-list">
+          <li><a href="#">카테고리</a></li>
+          <li><a href="#">핫딜</a></li>
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">랭킹</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">체험단</a></li>
+          <li><a href="board.html" class="gnb-active">집사커뮤니티</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== 게시글 상세 ===== -->
+  <main class="post-main">
+    <div class="post-container">
+
+      <!-- 목록으로 -->
+      <a href="board.html" class="post-back">← 목록으로</a>
+
+      <!-- 게시글 -->
+      <article class="post-article" id="postArticle">
+        <div class="post-loading">불러오는 중...</div>
+      </article>
+
+      <!-- 수정/삭제 버튼 (본인 글만 표시) -->
+      <div class="post-actions" id="postActions" style="display:none">
+        <a href="#" class="btn-edit" id="btnEdit">수정</a>
+        <button class="btn-delete" id="btnDelete">삭제</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/post.js"></script>
+
+</body>
+</html>

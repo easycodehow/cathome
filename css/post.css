@@ -1,0 +1,126 @@
+/* ===== 게시글 상세 페이지 스타일 ===== */
+
+.post-main {
+  min-height: 60vh;
+  padding: 60px 0 80px;
+}
+
+.post-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 목록으로 링크 */
+.post-back {
+  display: inline-block;
+  font-size: 14px;
+  color: #888;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: color var(--transition);
+}
+
+.post-back:hover {
+  color: var(--color-main);
+}
+
+/* 게시글 헤더 */
+.post-header {
+  margin-bottom: 16px;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.post-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #888;
+}
+
+.post-author {
+  font-weight: 600;
+  color: #555;
+}
+
+/* 구분선 */
+.post-divider {
+  border-top: 1px solid #eee;
+  margin: 16px 0 24px;
+}
+
+/* 첨부 이미지 */
+.post-image {
+  margin-bottom: 24px;
+}
+
+.post-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* 본문 */
+.post-content {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+  min-height: 120px;
+}
+
+/* 수정/삭제 버튼 */
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.btn-edit {
+  padding: 9px 20px;
+  border: 1px solid var(--color-main);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--color-main);
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+}
+
+.btn-edit:hover {
+  background: var(--color-main);
+  color: #fff;
+}
+
+.btn-delete {
+  padding: 9px 20px;
+  border: 1px solid #e53935;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: var(--font);
+  color: #e53935;
+  background: none;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.btn-delete:hover {
+  background: #e53935;
+  color: #fff;
+}
+
+/* 로딩 */
+.post-loading {
+  text-align: center;
+  padding: 60px;
+  color: #aaa;
+  font-size: 15px;
+}

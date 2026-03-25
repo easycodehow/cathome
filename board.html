@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>집사 커뮤니티 - CatHome</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+
+  <!-- ===== 상단 띠배너 ===== -->
+  <div class="top-banner">
+    <a href="#">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+      </svg>
+      이번 주 행사 이벤트 모아보기 →
+    </a>
+  </div>
+
+  <!-- ===== 헤더 ===== -->
+  <header id="header">
+    <div class="header-top">
+      <div class="header-inner">
+        <!-- 로고 -->
+        <a href="index.html" class="header-logo">
+          <span class="logo-cat">CAT</span><span class="logo-home">HOME</span>
+        </a>
+
+        <!-- 검색바 -->
+        <div class="header-search">
+          <input type="text" class="search-input" placeholder="상품을 검색해보세요">
+          <button class="search-btn" aria-label="검색">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- 유틸 아이콘 -->
+        <div class="header-icons">
+          <button class="icon-btn" aria-label="알림">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="장바구니">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"/>
+              <circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="프로필">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <button class="icon-btn btn-search-mobile" aria-label="검색">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GNB 네비게이션 -->
+    <nav class="header-gnb">
+      <div class="header-inner">
+        <ul class="gnb-list">
+          <li><a href="#">카테고리</a></li>
+          <li><a href="#">핫딜</a></li>
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">랭킹</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">체험단</a></li>
+          <li><a href="board.html" class="gnb-active">집사커뮤니티</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 모바일 메뉴 -->
+    <nav class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#">카테고리</a></li>
+        <li><a href="#">핫딜</a></li>
+        <li><a href="#">신상품</a></li>
+        <li><a href="#">랭킹</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">체험단</a></li>
+        <li><a href="board.html" class="gnb-active">집사커뮤니티</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- ===== 메인 콘텐츠 ===== -->
+  <main class="board-main">
+    <div class="board-container">
+
+      <!-- 페이지 타이틀 -->
+      <div class="board-title-wrap">
+        <h1 class="board-title">집사 커뮤니티</h1>
+      </div>
+
+      <!-- 글쓰기 버튼 -->
+      <div class="board-action-bar">
+        <span class="board-total">전체 <strong>6</strong>개</span>
+        <a href="#" class="btn-write">글쓰기</a>
+      </div>
+
+      <!-- 게시글 목록 테이블 -->
+      <table class="board-table">
+        <thead>
+          <tr>
+            <th class="col-num">번호</th>
+            <th class="col-title">제목</th>
+            <th class="col-author">작성자</th>
+            <th class="col-date">작성일</th>
+            <th class="col-views">조회수</th>
+            <th class="col-likes">좋아요</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-num">6</td>
+            <td class="col-title"><a href="#">우리 고양이가 처음으로 무릎에 올라왔어요 😭 너무 감동적인 순간이었습니다</a></td>
+            <td class="col-author">냥이집사</td>
+            <td class="col-date">2026.03.22</td>
+            <td class="col-views">40</td>
+            <td class="col-likes">12</td>
+          </tr>
+          <tr>
+            <td class="col-num">5</td>
+            <td class="col-title"><a href="#">사료 바꿨더니 밥을 안 먹어요… 어떻게 하면 좋을까요?</a></td>
+            <td class="col-author">고양이대장</td>
+            <td class="col-date">2026.03.21</td>
+            <td class="col-views">28</td>
+            <td class="col-likes">7</td>
+          </tr>
+          <tr>
+            <td class="col-num">4</td>
+            <td class="col-title"><a href="#">캣타워 추천해주세요! 2마리 합사 중인데 넓은 게 필요할 것 같아요</a></td>
+            <td class="col-author">치치맘</td>
+            <td class="col-date">2026.03.20</td>
+            <td class="col-views">53</td>
+            <td class="col-likes">21</td>
+          </tr>
+          <tr>
+            <td class="col-num">3</td>
+            <td class="col-title"><a href="#">로얄캐닌 vs 힐스 어떤 게 더 좋나요? 7살 노령묘 기준</a></td>
+            <td class="col-author">묘한집사</td>
+            <td class="col-date">2026.03.19</td>
+            <td class="col-views">81</td>
+            <td class="col-likes">34</td>
+          </tr>
+          <tr>
+            <td class="col-num">2</td>
+            <td class="col-title"><a href="#">고양이 모래 어떤 거 쓰세요? 두부모래 vs 벤토나이트 비교</a></td>
+            <td class="col-author">모래왕</td>
+            <td class="col-date">2026.03.18</td>
+            <td class="col-views">66</td>
+            <td class="col-likes">18</td>
+          </tr>
+          <tr>
+            <td class="col-num">1</td>
+            <td class="col-title"><a href="#">집사 커뮤니티에 오신 것을 환영합니다 🐱</a></td>
+            <td class="col-author">관리자</td>
+            <td class="col-date">2026.03.01</td>
+            <td class="col-views">204</td>
+            <td class="col-likes">88</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 페이지네이션 -->
+      <div class="board-pagination">
+        <button class="page-btn page-prev" disabled>이전</button>
+        <span class="page-info">1 / 1 페이지</span>
+        <button class="page-btn page-next" disabled>다음</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== 푸터 ===== -->
+  <footer>
+    <div class="footer-inner">
+
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">
+          <img src="img/logo_ko.png" alt="CATHOME" class="footer-logo-img">
+        </a>
+        <div class="footer-sns">
+          <a href="#" class="footer-sns-link" aria-label="인스타그램">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-sns-link" aria-label="유튜브">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-sns-link" aria-label="네이버 블로그">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm8.5 4.5v5.3L9 7.5H7v9h2.5v-5.3l3.5 5.3H15v-9h-2.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-info">
+        <p><strong>캣홈 주식회사</strong> &nbsp;|&nbsp; 대표자: 홍길동 &nbsp;|&nbsp; 사업자등록번호: 123-45-67890</p>
+        <p>주소: 서울특별시 강남구 테헤란로 123, 캣홈빌딩 5층 &nbsp;|&nbsp; 고객센터: 1588-0000 (평일 09:00~18:00)</p>
+        <p>통신판매업 신고번호: 2026-서울강남-0000 &nbsp;|&nbsp; 이메일: help@cathome.co.kr</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 CATHOME. All rights reserved.</p>
+        <div class="footer-policy">
+          <a href="#">이용약관</a>
+          <a href="#"><strong>개인정보처리방침</strong></a>
+          <a href="#">고객센터</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/board.js"></script>
+
+</body>
+</html>

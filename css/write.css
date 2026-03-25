@@ -1,0 +1,115 @@
+/* ===== 글쓰기 페이지 스타일 ===== */
+
+.write-main {
+  min-height: 60vh;
+  padding: 60px 0 80px;
+}
+
+.write-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.write-title-wrap {
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-text);
+  margin-bottom: 32px;
+}
+
+.write-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* 입력 그룹 */
+.write-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.write-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.write-group input[type="text"],
+.write-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--color-text);
+  outline: none;
+  transition: border-color var(--transition);
+  resize: vertical;
+}
+
+.write-group input[type="text"]:focus,
+.write-group textarea:focus {
+  border-color: var(--color-main);
+}
+
+.write-group input[type="file"] {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 이미지 미리보기 */
+.image-preview img {
+  margin-top: 10px;
+  max-width: 320px;
+  max-height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+/* 버튼 영역 */
+.write-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.btn-cancel {
+  padding: 12px 24px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: var(--font);
+  color: #666;
+  text-decoration: none;
+  transition: border-color var(--transition);
+}
+
+.btn-cancel:hover {
+  border-color: #aaa;
+}
+
+.btn-submit-write {
+  padding: 12px 32px;
+  background: var(--color-main);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-submit-write:hover {
+  background: #e56200;
+}
+
+.btn-submit-write:disabled {
+  background: #ccc;
+  cursor: default;
+}
