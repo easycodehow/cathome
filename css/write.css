@@ -60,13 +60,42 @@
 }
 
 /* 이미지 미리보기 */
-.image-preview img {
+.preview-wrap {
+  display: inline-block;
+  position: relative;
   margin-top: 10px;
+}
+
+.preview-wrap img {
+  display: block;
   max-width: 320px;
   max-height: 240px;
   border-radius: 8px;
   object-fit: cover;
   border: 1px solid #eee;
+}
+
+.btn-remove-image {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+}
+
+.btn-remove-image:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* 버튼 영역 */
