@@ -3,6 +3,7 @@
 const POSTS_PER_PAGE = 10;
 let currentPage = 1;
 let totalCount = 0;
+let searchKeyword = '';
 
 // 페이지 로드 시 실행
 loadPosts();
@@ -12,11 +13,18 @@ async function loadPosts() {
   const from = (currentPage - 1) * POSTS_PER_PAGE;
   const to = from + POSTS_PER_PAGE - 1;
 
-  const { data: posts, count, error } = await supabaseClient
+  let query = supabaseClient
     .from('posts')
     .select('*', { count: 'exact' })
     .order('created_at', { ascending: false })
     .range(from, to);
+
+  // 검색어가 있으면 제목 필터 적용
+  if (searchKeyword) {
+    query = query.ilike('title', `%${searchKeyword}%`);
+  }
+
+  const { data: posts, count, error } = await query;
 
   if (error) {
     console.error('글 목록 불러오기 실패:', error.message);
@@ -88,6 +96,14 @@ document.querySelector('.page-prev')?.addEventListener('click', () => {
 document.querySelector('.page-next')?.addEventListener('click', () => {
   const totalPages = Math.ceil(totalCount / POSTS_PER_PAGE);
   if (currentPage < totalPages) { currentPage++; loadPosts(); }
+});
+
+// ===== 검색 폼 =====
+document.getElementById('searchForm')?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  searchKeyword = document.getElementById('searchInput').value.trim();
+  currentPage = 1;
+  loadPosts();
 });
 
 // ===== 글쓰기 버튼: 로그인 확인 =====

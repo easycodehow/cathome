@@ -116,10 +116,16 @@
         <h1 class="board-title">집사 커뮤니티</h1>
       </div>
 
-      <!-- 글쓰기 버튼 -->
+      <!-- 액션바: 전체 글 수 + 검색 + 글쓰기 -->
       <div class="board-action-bar">
-        <span class="board-total">전체 <strong>6</strong>개</span>
-        <a href="#" class="btn-write">글쓰기</a>
+        <span class="board-total">전체 <strong>0</strong>개</span>
+        <div class="board-action-right">
+          <form class="board-search" id="searchForm">
+            <input type="text" class="board-search-input" id="searchInput" placeholder="제목 검색">
+            <button type="submit" class="board-search-btn">검색</button>
+          </form>
+          <a href="#" class="btn-write">글쓰기</a>
+        </div>
       </div>
 
       <!-- 게시글 목록 테이블 -->

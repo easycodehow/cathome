@@ -61,13 +61,8 @@ formSignup.addEventListener('submit', async (e) => {
   e.preventDefault();
   const email    = document.getElementById('signupEmail').value.trim();
   const password = document.getElementById('signupPassword').value;
-  const nickname = document.getElementById('signupNickname').value.trim();
 
-  const { error } = await supabaseClient.auth.signUp({
-    email,
-    password,
-    options: { data: { nickname } }
-  });
+  const { error } = await supabaseClient.auth.signUp({ email, password });
 
   if (error) {
     showMsg('회원가입 실패: ' + error.message, true);

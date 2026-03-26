@@ -177,14 +177,12 @@ document.getElementById('writeForm').addEventListener('submit', async (e) => {
     }
   } else {
     // 작성
-    const nickname = currentUser.user_metadata?.nickname || currentUser.email.split('@')[0];
-
     const { data: post, error } = await supabaseClient
       .from('posts')
       .insert({
         title,
         content,
-        author_name: nickname,
+        author_name: currentUser.email.split('@')[0],
         image_url: imageUrl,
         user_id: currentUser.id
       })
@@ -194,7 +192,7 @@ document.getElementById('writeForm').addEventListener('submit', async (e) => {
     if (error) {
       alert('글 작성 실패: ' + error.message);
     } else {
-      window.location.href = `post.html?id=${post.id}`;
+      window.location.href = 'board.html';
     }
   }
 
